@@ -1,0 +1,21 @@
+services:
+  ai_service:
+    image: name
+    tty: true
+    stdin_open: true
+    restart: always
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    environment:
+      - PORT=7777
+    ports:
+      - "7777:7777"   
+
+    healthcheck:
+      test: curl  -f http://localhost:7777/info || exit 1
+      interval: 5s
+      timeout: 5s
+      retries: 3

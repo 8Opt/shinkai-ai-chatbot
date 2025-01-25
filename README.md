@@ -1,2 +1,3 @@
-# sinkai-ai-chatbot
+# shinkai-ai-chatbot
+
 Shinkai's chatbot
