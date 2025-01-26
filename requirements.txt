@@ -1,6 +1,10 @@
 colorlog==6.9.0
-fastapi==0.115.6
-pydantic==2.10.5
+fastapi==0.115.7
+langchain_core==0.3.31
+langchain_google_genai==2.0.9
+langchain_groq==0.2.3
+langchain_huggingface==0.1.2
+pydantic==2.10.6
 pydantic_settings==2.7.1
+pytest==7.4.2
 uvicorn==0.34.0
-
