@@ -18,4 +18,4 @@ def get_ipv4_address():
 
 
 def datetime_now() -> int:
-    return datetime.now().timestamp()
+    return int(datetime.now().timestamp())
